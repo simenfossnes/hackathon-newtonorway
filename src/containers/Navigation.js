@@ -4,19 +4,6 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import * as navigationActions from "../actions/navigationActions";
 
-const styles = {
-    root: {
-        flexGrow: 1,
-    },
-    flex: {
-        flex: 1,
-    },
-    menuButton: {
-        marginLeft: -12,
-        marginRight: 20,
-    },
-};
-
 class NavigationContainer extends React.Component {
 
     toggleLeftDrawer = () => {

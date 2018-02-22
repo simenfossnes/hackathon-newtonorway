@@ -11,6 +11,9 @@ export default {
             visa: "skilled-workers-visa"
         }
     },
+    filters: {
+        searchString: ""
+    },
     problems: [
         {
             question: "How do I set up a bank account?",

@@ -5,11 +5,20 @@ import ProblemList from '../components/ProblemsList';
 import * as problemActions from '../actions/problemActions';
 
 class ProblemsList extends React.Component {
+
+    filterProblems = (problems, searchString) => {
+        return problems.filter(p => p.question.includes(searchString))
+    };
+
     render() {
         return (
             <ProblemList
                 problemActions={this.props.problemActions}
-                problems={this.props.problems}
+                problems={
+                    this.props.searchString ?
+                        this.filterProblems(this.props.problems, this.props.searchString) :
+                        this.props.problems
+                }
             >
                 {this.props.children}
             </ProblemList>
@@ -19,7 +28,8 @@ class ProblemsList extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        problems: state.problems
+        problems: state.problems,
+        searchString: state.filters.searchString
     };
 }
 
