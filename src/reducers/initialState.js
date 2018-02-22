@@ -1,4 +1,8 @@
 export default {
+    navigation: {
+        showLeftDrawer: false,
+        showBottomDrawer: false
+    },
     personalBackground: {
         originCountry: "Uganda",
         targetCountry: "Norway",
