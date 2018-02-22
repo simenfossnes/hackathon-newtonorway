@@ -1,7 +1,7 @@
 import initialState from './initialState';
 import { ADD_PROBLEM } from "../actions/actionTypes";
 
-export default function problem(state = initialState.problems, action) {
+export default function problemsReducer(state = initialState.problems, action) {
     let newState;
     switch (action.type) {
 
