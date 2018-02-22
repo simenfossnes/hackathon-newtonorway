@@ -34,7 +34,7 @@ const Navigation = props => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="title" color="inherit" className={classes.flex}>
-                        Hacking Norway / New To Norway
+                        New To Norway
                     </Typography>
                     <IconButton onClick={props.toggleBottomDrawer} className={classes.menuButton} color="inherit" aria-label="Menu">
                         <AccountCircle />
@@ -63,6 +63,7 @@ const Navigation = props => {
                     <AccountForm/>
                 </div>
             </Drawer>
+            {props.children}
         </div>
     );
 };

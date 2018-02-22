@@ -20,12 +20,10 @@ const styles = {
 class NavigationContainer extends React.Component {
 
     toggleLeftDrawer = () => {
-        alert('left drawer');
         this.props.navigationActions.toggleShowLeftDrawer();
     };
 
     toggleBottomDrawer = () => {
-        alert('bottom drawer');
         this.props.navigationActions.toggleShowBottomDrawer();
     };
 
