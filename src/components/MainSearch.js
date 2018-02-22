@@ -16,14 +16,18 @@ const styles = theme => ({
 const MainSearch = props => {
     const { classes } = props;
     return (
-        <TextField
-            onChange={props.updateSearchString}
-            id="search"
-            label="Search field"
-            type="search"
-            className={classes.textField}
-            margin="normal"
-        />
+        <div style={{width: '80vw'}}>
+            <TextField
+                fullWidth={true}
+                autoFocus={true}
+                onChange={props.updateSearchString}
+                id="search"
+                label="Search field"
+                type="search"
+                className={classes.textField}
+                margin="normal"
+            />
+        </div>
     )
 };
 

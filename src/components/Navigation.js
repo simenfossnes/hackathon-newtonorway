@@ -6,7 +6,7 @@ import Drawer from 'material-ui/Drawer';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'react-icons/lib/md/menu';
+import FilterIcon from 'react-icons/lib/fa/sliders';
 import AccountCircle from 'react-icons/lib/md/account-circle';
 import FilterForm from "../components/FilterForm";
 import AccountForm from "../components/AccountForm";
@@ -27,11 +27,11 @@ const styles = {
 const Navigation = props => {
     const { classes } = props;
     return (
-        <div styles={styles.root}>
+        <div styles={styles.root} >
             <AppBar position="static">
                 <Toolbar>
                     <IconButton onClick={props.toggleLeftDrawer} styles={styles.menuButton} color="inherit" aria-label="Menu">
-                        <MenuIcon />
+                        <FilterIcon />
                     </IconButton>
                     <Typography variant="title" color="inherit" className={classes.flex}>
                         New To Norway
