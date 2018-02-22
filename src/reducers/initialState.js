@@ -10,7 +10,29 @@ export default {
     problems: [
         {
             question: "How do I set up a bank account?",
-
+            approach: {
+                recipe: ["heyho", "habahaba", "one more step"],
+                upVotes: 122,
+                experiences: [
+                    {
+                        description: "wow.. this works. got a bank account in no time",
+                        upVotes: 3
+                    }
+                ]
+            }
+        },
+        {
+            question: "How do I get a fastlege?",
+            approach: {
+                recipe: ["heyho", "habahaba", "try harder"],
+                upVotes: 4,
+                experiences: [
+                    {
+                        description: "this doesn't work!!!",
+                        upVotes: 30
+                    }
+                ]
+            }
         }
     ]
 };
